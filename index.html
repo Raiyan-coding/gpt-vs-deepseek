@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-chatgpt {
+      background-color: #4CAF50; /* Green */
+    }
+
+    .btn-chatgpt:hover {
+      background-color: #45a049;
+      transform: translateY(-2px);
+    }
+
+    .btn-deepseek {
+      background-color: #3498db; /* Blue */
+    }
+
+    .btn-deepseek:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Choose a Platform</h2>
+  <div class="button-container">
+    <button class="btn btn-chatgpt" onclick="window.location.href='chatgpt.html'">ChatGPT</button>
+    <button class="btn btn-deepseek" onclick="window.location.href='deepseek.html'">DeepSeek.ai</button>
+  </div>
+</body>
+</html>
